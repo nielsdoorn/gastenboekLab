@@ -9,7 +9,7 @@ Het lab is opgebouwd uit een aantal stappen. Volg deze stappen en sla geen opdra
 
 ## Stap 0: Online plaatsen
 * Download dit lab van GitHub en plaats de bestanden op een webserver. Op deze manier kun je het gastenboek testen!
-* Maak met behulp van phpMyAdmin een nieuwe database aan op de databaseserver.
+* Maak eventueel met behulp van mysql-workbench of phpMyAdmin een nieuwe database aan op de databaseserver. (http://www.mysql.com/downloads/workbench/)
 
 ## Stap 1: De HTML en CSS (nog geen PHP)
 Open `gastenboek-stap1.php` en `style.css`.
@@ -54,10 +54,10 @@ Als je de webhosting van school gebruikt kun je dezelfde inloggegevens gebruiken
 
 Pas deze variabelen aan:
 ```php
-$gebruikersnaam = "root";
-$wachtwoord = "root";
-$databaseserver = "localhost";
-$databasenaam = "gastenboek";
+$gebruikersnaam = "sXXXXXX"; 			// je studentnummer
+$wachtwoord = "geheim"; 					// je wachtwoord
+$databaseserver = "localhost"; 	  // localhost of student.rocvantwente.nl
+$databasenaam = "sXXXXXX";  		  // databasenaam (je studentnummer)
 
 // maak verbinding met de database
 mysql_connect($databaseserver, $gebruikersnaam, $wachtwoord);
@@ -158,6 +158,6 @@ Het gastenboek is af. Als het goed is heb je nu een werkend gastenboek. Het is e
 
 Een paar mogelijkheden hiervoor zijn:
 * Foutafhandeling: wat te doen als het verbinden met de database niet lukt?
-* Het verwijderen van berichten vanaf een aparte beheerpagina
-* Een captcha toevoegen om spam te voorkomen
-* JavaScript gebruiken om het formulier te valideren
+* Het verwijderen van berichten vanaf een aparte beheerpagina.
+* Een captcha toevoegen om spam te voorkomen.
+* JavaScript gebruiken om het formulier te valideren.
