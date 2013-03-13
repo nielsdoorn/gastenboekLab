@@ -1,0 +1,101 @@
+
+body {
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2 {
+	color: orange;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;	
+	background-color: #eee;
+	padding: 1em;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bericht {
+
+}
+
+.titel {
+	color: #343434;
+}
+
+.afzender {
+	display: inline-block;
+	width: 50%;
+	font-style: italic;
+	padding: 0.5em 0 0 0;
+}
+
+.afzender:before {
+	content: 'afzender: ';
+}
+
+.datum {
+	display: inline-block;
+	width: 49%;
+	text-align: right;
+	padding: 0.5em 0 0.5em 0;
+}
+
+.datum:before {
+	content: 'datum: ';
+}
+
+
+.tekst {
+	background-color: #868686;
+	padding: 0.5em;
+}
+
+.bericht:last-child {
+	margin-bottom: 1em;
+}
+
+form {
+	background-color: #454545;
+	padding: 1em;
+	color: white;
+}
+
+label {
+	display: block;
+	color: white;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+input[type=text], input[type=email]{
+	width: 400px;
+}
+
+textarea {
+	width: 400px;
+	height: 150px;
+}
+
+input[type=submit] {
+	display: block;
+	clear: both;
+	background-color: white;
+	font-family: Arial, sans-serif;
+	border: none;
+	padding: 0.5em;
+}
+
+input[type=submit]:hover {
+	background-color: orange;
+}
