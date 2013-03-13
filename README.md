@@ -148,7 +148,7 @@ Open het bestand `gastenboek-stap4.php` om de opdrachten uit te voeren.
 
 **Test je gastenboek!**
 
-## Inlveren
+## Inleveren
 * De antwoorden op de uitzoekvragen
 * Alle PHP bestanden
 * Een link naar je werkende gastenboek
