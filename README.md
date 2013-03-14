@@ -1,5 +1,5 @@
 # Gastenboek Lab
-Dit is een lab om tot een werken gastenboek in PHP met een MySQL database te maken. Er wordt vooral aandacht besteed aan de verschillende aspecten die hiervoor nodig zijn zoals de HTML, het gebruik van de database en het versturen van formulieren. Het gastenboek zelf is vrij eenvoudig. 
+Dit is een lab om tot een werken gastenboek in **PHP** met een **MySQL database** te maken. Er wordt vooral aandacht besteed aan de verschillende aspecten die hiervoor nodig zijn zoals de HTML, het gebruik van de database en het versturen van formulieren. Het gastenboek zelf is functioneel vrij eenvoudig. 
 
 Dit lab bevat een aantal opdrachten om dingen op te zoeken en een aantal opdrachten waarbij je de code aan moet passen.
 
