@@ -9,7 +9,7 @@ Het lab is opgebouwd uit een aantal stappen. Volg deze stappen en sla geen opdra
 
 ## Stap 0: Online plaatsen
 * Download dit lab van GitHub en plaats de bestanden op een webserver. Op deze manier kun je het gastenboek testen!
-* Maak eventueel met behulp van mysql-workbench of phpMyAdmin een nieuwe database aan op de databaseserver. (http://www.mysql.com/downloads/workbench/)
+* (Is niet nodig voor ROC account) Maak eventueel met behulp van mysql-workbench of phpMyAdmin een nieuwe database aan op de databaseserver. (http://www.mysql.com/downloads/workbench/)
 
 ## Stap 1: De HTML en CSS (nog geen PHP)
 Open `gastenboek-stap1.php` en `style.css`.
