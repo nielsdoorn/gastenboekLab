@@ -136,7 +136,7 @@ De functie `mysql_query` voert de SQL query uit. Hierdoor wordt het bericht opge
 ### Uitzoekvragen
 1. Wat zijn de verschillende http methodes om een HTML formulier te versturen vanuit een browser?
 2. Hoe kan je in PHP een waarde die een bezoeker in het formulier heeft ingevuld opvragen?
-3. Welke code in `database.php` zorgt er voor dat er alleen als er een formulier is ingevuld een nieuw bericht wordt aangemaakt?
+3. Welke code in `gastenboek-stap4.php` zorgt er voor dat er alleen als er een formulier is ingevuld een nieuw bericht wordt aangemaakt?
 4. Wat is SQL injectie?
 
 Open het bestand `gastenboek-stap4.php` om de opdrachten uit te voeren.
