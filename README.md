@@ -54,28 +54,22 @@ Als je de webhosting van school gebruikt kun je dezelfde inloggegevens gebruiken
 
 Pas deze variabelen aan:
 ```php
-$gebruikersnaam = "sXXXXXX"; 			// je studentnummer
-$wachtwoord = "geheim"; 					// je wachtwoord
-$databaseserver = "localhost"; 	  // localhost of student.rocvantwente.nl
-$databasenaam = "sXXXXXX";  		  // databasenaam (je studentnummer)
+$gebruikersnaam = "root";
+$wachtwoord = "root";
+$databaseserver = "localhost";
+$databasenaam = "gastenboek";
 
 // maak verbinding met de database
-mysql_connect($databaseserver, $gebruikersnaam, $wachtwoord);
+$mysqli = new mysqli($databaseserver, $gebruikersnaam, $wachtwoord, $databasenaam);
 ```
 
-Als er verbinding is gemaakt met de databaseserver moet je een database selecteren (je kunt meerdere databases op een databaseserver gebruiken). Dit gebeurt met het commando `mysql_select_db`:
-```php
-// selecteer een database
-mysql_select_db($databasenaam);
-```
 
 Daarna kunnen we SQL queries uitvoeren en eventueel de resultaten hiervan verwerken. Bijvoorbeeld:
 ```php
 $sql = "SELECT * FROM gastenboek ORDER BY datum DESC";
-
-$resultaat = mysql_query($sql);
-
-while($bericht = mysql_fetch_assoc($resultaat)) {
+$resultaat = $mysqli->query($sql);
+$resultaat->data_seek(0);
+while($bericht = $resultaat->fetch_assoc()) {
 	$berichten[] = $bericht;
 }
 ```
@@ -124,9 +118,10 @@ Het toevoegen van nieuwe berichten is de laatste stap die nodig is om je gastenb
 Uiteindelijk zorgt de functie `voegBerichtToe` in de `database.php` er voor dat dit gebeurt.
 ```php
 function voegBerichtToe($titel, $naam, $email, $tekst) {
+	global $mysqli;
 	$insertQuery = "INSERT INTO `gastenboek` (titel, naam, email, tekst) VALUES ('%s', '%s', '%s', '%s');";
 	$sql = sprintf($insertQuery, $titel, $naam, $email, $tekst);
-	mysql_query($sql);
+	$mysqli->query($sql);
 }
 ```
 Deze functie krijgt de ingevulde velden mee als argumenten en maakt hier een SQL query van. Dit gebeurt door middel van de `sprintf` functie om SQL injectie te voorkomen.
@@ -151,7 +146,7 @@ Open het bestand `gastenboek-stap4.php` om de opdrachten uit te voeren.
 ## Inleveren
 * De antwoorden op de uitzoekvragen
 * Alle PHP bestanden
-* Een link naar je werkende gastenboek
+* Een link naar je werkende gastenboek als je hem online hebt staan, anders lokaal op je computer laten zien
 
 ## Extra stappen (vrijblijvend, voor extra bonuspunten)
 Het gastenboek is af. Als het goed is heb je nu een werkend gastenboek. Het is echter een vrij eenvoudig gastenboek. Misschien is het een goed idee om het nog beter te maken.
