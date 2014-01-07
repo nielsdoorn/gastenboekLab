@@ -1,7 +1,7 @@
 <?php 
 
-$gebruikersnaam = "root"; 			// je studentnummer
-$wachtwoord = "root"; 					// je wachtwoord
+$gebruikersnaam = "root";
+$wachtwoord = "root";
 $databaseserver = "localhost";
 $databasenaam = "gastenboek";
 
