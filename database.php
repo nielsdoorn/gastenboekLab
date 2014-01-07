@@ -2,8 +2,8 @@
 
 $gebruikersnaam = "root"; 			// je studentnummer
 $wachtwoord = "root"; 					// je wachtwoord
-$databaseserver = "localhost"; 	// student.rocvantwente.nl
-$databasenaam = "gastenboek";		// databasenaam (je studentnummer)
+$databaseserver = "localhost";
+$databasenaam = "gastenboek";
 
 
 // maak verbinding met de database
