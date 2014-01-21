@@ -34,17 +34,15 @@ Wij gebruiken in deze opdracht MySQL. MySQL is een relationele database. Dat bet
 
 Iedere tabel bevat 'kolommen' met velden en 'rijen' met gegevens. De kolommen kunnen verschillende types hebben. Zo kun je kolommen maken waarin je tekst op kan slaan, maar ook voor datums, getallen en binaire data zijn er mogelijkheden. De tabel voor het gastenboek ziet er zo uit:
 
-| id  | datum               | naam        | email            | bericht  |
-|----:|--------------------:|-------------|------------------|----------|
-| 1   | 10-03-2013 20:12:34 | Jan         | jan@eendomein.nl | Lorem... |
-| 2   | 11-03-2013 21:12:34 | Piet        | jan@eendomein.nl | Lorem... |
-| 3   | 12-03-2013 7:12:34  | Kees        | jan@eendomein.nl | Lorem... |
-| 4   | 13-03-2013 20:12:34 | Laura       | jan@eendomein.nl | Lorem... |
-| 5   | 14-03-2013 20:12:34 | Dennis      | jan@eendomein.nl | Lorem... |
+| id  | datum               | naam        | email            | tekst    | titel  |
+|----:|--------------------:|-------------|------------------|----------|--------|
+| 1   | 10-03-2013 20:12:34 | Jan         | jan@eendomein.nl | Lorem... | Wat... |
+| 2   | 11-03-2013 21:12:34 | Piet        | jan@eendomein.nl | Lorem... | Wat... |
+| 3   | 12-03-2013 7:12:34  | Kees        | jan@eendomein.nl | Lorem... | Wat... |
+| 4   | 13-03-2013 20:12:34 | Laura       | jan@eendomein.nl | Lorem... | Wat... |
+| 5   | 14-03-2013 20:12:34 | Dennis      | jan@eendomein.nl | Lorem... | Wat... |
 
-De eerste kolom bevat een uniek nummer dat automatisch door de database wordt gegenereerd. Het is altijd handig om een unieke id kolom te hebben zodat je makkelijk bepaalde rijen uit de datase kunt ophalen.
-
-Tip: kijk in'het boek 'The Manga Guide To Databases' voor meer informatie.
+De eerste kolom bevat een uniek nummer dat automatisch door de database wordt gegenereerd. Het is altijd handig om een unieke id kolom te hebben zodat je makkelijk bepaalde rijen uit de database kunt ophalen.
 
 Alle handelingen die met de database te maken hebben heb ik in het bestand `database.php` geplaatst.
 
